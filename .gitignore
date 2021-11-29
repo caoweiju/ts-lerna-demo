@@ -1,0 +1,10 @@
+node_modules/
+packages/**/node_modules/
+dist/
+.sass-cache/
+.DS_Store
+.idea/
+.vscode/
+coverage
+versions/
+.history/

@@ -1,0 +1,36 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "android": "4.4",
+                    "ios": "9"
+                },
+                "modules": "commonjs",
+                "useBuiltIns": false
+            }
+        ],
+        [
+            "@babel/preset-react"
+        ],
+        [
+            "@babel/preset-typescript",
+            {
+                "isTSX": false
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-runtime",
+            {
+              "absoluteRuntime": false,
+              "corejs": 3,
+              "helpers": true,
+              "regenerator": true,
+              "version": "7.16.3"
+            }
+        ]
+    ]
+}

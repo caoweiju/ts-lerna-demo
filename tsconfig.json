@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "isolatedModules": true,
+        "assumeChangesOnlyAffectDirectDependencies": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "watchOptions": {
+        "excludeDirectories": ["node_modules", "packages/**/node_modules/**/*", "**/*.spec.ts"]
+    },
+    "include": ["packages/**/src/**/*"],
+    "exclude": ["node_modules", "packages/**/node_modules/**/*", "**/*.spec.ts"]
+}

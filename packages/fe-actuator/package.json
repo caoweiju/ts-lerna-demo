@@ -1,0 +1,45 @@
+{
+  "name": "@caoweiju/fe-actuator",
+  "version": "0.0.1",
+  "description": "a actuator ysed to excute fe resource , include of html/css/js",
+  "author": "caoweiju <caoweiju@foxmail.com>",
+  "homepage": "https://github.com/caoweiju/ts-lerna-demo#readme",
+  "license": "ISC",
+  "main": "dist/fe-actuator.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://r.npm.sankuai.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caoweiju/ts-lerna-demo.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "npx babel lib --out-dir --config-file ../../babel.config.json",
+    "ts-prebuild": "npx tsc --project ../../tsconfig.json"
+  },
+  "bugs": {
+    "url": "https://github.com/caoweiju/ts-lerna-demo/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "core-js": "3",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.16.3",
+    "@babel/runtime-corejs3": "^7.16.3"
+  }
+}
